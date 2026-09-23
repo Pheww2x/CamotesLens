@@ -1,0 +1,56 @@
+name: camotes_lens
+description: "Sweet Potato Variety Classifier — CNN-based leaf image analysis for agricultural identification."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Image picking — camera + gallery
+  image_picker: ^1.1.2
+
+  # Crop images before classification
+  image_cropper: ^8.0.2
+
+  # HTTP client with multipart support
+  http: ^1.2.2
+
+  # Async image loading
+  cached_network_image: ^3.4.1
+
+  # Permissions (camera, storage)
+  permission_handler: ^11.3.1
+
+  # Material icons extended set
+  cupertino_icons: ^1.0.8
+
+  # Shared preferences (for configurable settings)
+  shared_preferences: ^2.3.2
+
+  # Path utilities
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # Google Fonts for modern typography
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^4.0.0
+
+  # Mocking for unit tests
+  mockito: ^5.4.4
+  build_runner: ^2.4.12
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
